@@ -1,10 +1,11 @@
 import './App.css';
-import Chart from './components/Chart';
+import Header from './components/Header/Header';
 
-function App() {
+const App = () => {
+  const data = {name: 'Ashik Mahmud', dob: '13 jan, 2003', designation: 'full-stack dev'}
   return (
     <>
-      <Chart />
+      <Header {...data} />
     </>
   );
 }
